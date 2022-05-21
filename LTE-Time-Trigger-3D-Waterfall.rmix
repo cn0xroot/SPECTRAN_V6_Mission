@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mission>
+    <General GUID="f142b869-fd2f-4518-90e8-c1a45dd13521" Version="RMIX_2016-09-30-1" Build="9649" SaveDate="2021-10-21T14:22:19,856" SaveBuild="2.1.0.9649" CreatedDate="2021-10-21T13:46:00,587" CreatedBuild="2.1.0.9649">
+        <ConfigItem Name="missionConfig" Class="group" Type="0">
+            <ConfigItem Name="general" Class="group" Type="0">
+                <ConfigItem Name="saveCompressed" Class="bool" Type="6" Val="0"/>
+                <ConfigItem Name="misVer" Class="string" Type="3" Val="1.0"/>
+                <ConfigItem Name="preventShutdown" Class="bool" Type="6" Val="0"/>
+            </ConfigItem>
+        </ConfigItem>
+        <ConfigItem Name="rocManConfig" Class="group" Type="0">
+            <ConfigItem Name="autostartROCMan" Class="bool" Type="6" Val="0"/>
+            <ConfigItem Name="rocItems" Class="group" Type="0">
+                <ConfigItem Name="rocMaster#5450b6e7-9ac3-4643-9a12-df5e196611f7" Class="group" Type="0">
+                    <ConfigItem Name="rocGrpMain" Class="group" Type="0">
+                        <ConfigItem Name="rocActive" Class="bool" Type="6" Val="1"/>
+                        <ConfigItem Name="rocActiveMonitoring" Class="bool" Type="6" Val="1"/>
+                    </ConfigItem>
+                    <ConfigItem Name="rocBaseProps" Class="group" Type="0">
+                        <ConfigItem Name="title" Class="string" Type="3" Val="Master"/>
+                        <ConfigItem Name="conTarget" Class="string" Type="3" Val="DESKTOP-G0HVU84"/>
+                        <ConfigItem Name="conTargetPortRTSA" Class="integer" Type="1" Val="55442"/>
+                        <ConfigItem Name="conTargetPortROCClient" Class="integer" Type="1" Val="55445"/>
+                        <ConfigItem Name="conTargetPortROCInstall" Class="integer" Type="1" Val="55446"/>
+                    </ConfigItem>
+                    <ConfigItem Name="rocGrpRTSARestart" Class="group" Type="0">
+                        <ConfigItem Name="rtsaRestartParameters" Class="string" Type="3" Val="-nonInteractiveGui -noCheck"/>
+                    </ConfigItem>
+                    <ConfigItem Name="rocGrpROCClientInstall" Class="group" Type="0">
+                        <ConfigItem Name="rocRTSA_InstallParameters" Class="string" Type="3" Val=""/>
+                        <ConfigItem Name="roc_ROCClient_InstallParameters" Class="string" Type="3" Val=""/>
+                    </ConfigItem>
+                    <ConfigItem Name="mGroupTime" Class="group" Type="0">
+                        <ConfigItem Name="isTimeServer" Class="bool" Type="6" Val="1"/>
+                    </ConfigItem>
+                    <ConfigItem Name="rocTasks" Class="group" Type="0">
+                        <ConfigItem Name="rocTask#rbtHostInfo" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtRTSAInfo" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtRTSAHealth" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtRTSAHealthModules" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtRTSASnapshot" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtRTSAHostTimeInfo" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtROCClientInfo" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtROCClientHealth" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtROCClientHealthModules" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtROCClientSnapshot" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtROCClientHostTimeInfo" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtROCInstallInfo" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtROCInstallHealth" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtROCInstallHealthModules" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtROCInstallSnapshot" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtROCInstallHostTimeInfo" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                        <ConfigItem Name="rocTask#rbtRTSAMissionInfo" Class="group" Type="0">
+                            <ConfigItem Name="monInterval" Class="integer" Type="1" Val="0"/>
+                        </ConfigItem>
+                    </ConfigItem>
+                </ConfigItem>
+            </ConfigItem>
+        </ConfigItem>
+        <ConfigItem Name="appBlockContainerDerivedFactoryConfig" Class="group" Type="0">
+            <DerivedFactories/>
+        </ConfigItem>
+    </General>
+    <Data>
+        <Bases>
+            <ChildBases/>
+            <Base GUID="98e848b1-1457-436d-a820-344d965b3db8" Factory="Factory_BlockEditor" Name="Base_BlockEditor" Title="Blockgraph Editor" AppBlock="1"/>
+            <Base GUID="4a1faa03-c44f-4342-ad24-6461c506618e" Factory="Factory_ROC" Name="Base_ROC" Title="ROC" AppBlock="1"/>
+            <Base GUID="e530114e-3a03-417c-83ca-d7a6d7049f86" Factory="Factory_InfoCenter" Name="Base_InfoCenter" Title="Info Center" AppBlock="1"/>
+            <Base GUID="66419f04-a37a-45e4-b246-3d6fb0dfbd2e" Factory="Factory_HealthMonitor" Name="Base_HealthMonitor" Title="Health Monitor" AppBlock="1"/>
+            <Base GUID="a39214a3-8436-45aa-9ba3-684448aefd5d" Factory="Factory_Spectran_V6B" Name="Block_Spectran_V6B_0" Title="SPECTRAN V6">
+                <ConfigItem Name="Block_Spectran_V6B_0_config" Class="group" Type="0">
+                    <ConfigItem Name="main" Class="group" Type="0">
+                        <ConfigItem Name="centerfreq" Class="float" Type="2" Val="1818000000" SubUnitName="MHz"/>
+                        <ConfigItem Name="decimation" Class="enum" Type="7" Val="1" SVal="1 / 2" Names="Full,1 / 2,1 / 4,1 / 8,1 / 16,1 / 32,1 / 64,1 / 128,1 / 256,1 / 512"/>
+                        <ConfigItem Name="reflevel" Class="float" Type="2" Val="-40" SubUnitName="dBm"/>
+                    </ConfigItem>
+                    <ConfigItem Name="calibration" Class="group" Type="0">
+                        <ConfigItem Name="preamp" Class="enum" Type="7" Val="1" SVal="Auto" Names="Disabled,Auto,None,Amp,Preamp,Both"/>
+                    </ConfigItem>
+                </ConfigItem>
+                <Inputs>
+                    <Input Name="Input_Antenna_0" Title="RF1" Owner="Block_Spectran_V6B_0"/>
+                    <Input Name="Input_Antenna2_0" Title="RF2" Owner="Block_Spectran_V6B_0"/>
+                    <Input Name="Input_Spectran_V6B_IQ_0" Title="IQStream1" Owner="Block_Spectran_V6B_0"/>
+                </Inputs>
+                <Outputs>
+                    <Output Name="Output_Spectran_V6B_IQ_0" Title="IQStream1" Owner="Block_Spectran_V6B_0">
+                        <Connections>
+                            <Connection Name="Input_IQ_0" Title="IQ" Owner="Block_IQPowerSpectrum_0"/>
+                        </Connections>
+                    </Output>
+                    <Output Name="Output_Spectran_V6B_IQ2_0" Title="IQStream2" Owner="Block_Spectran_V6B_0"/>
+                    <Output Name="Output_Spectran_V6B_Spectra1_0" Title="Spectra1" Owner="Block_Spectran_V6B_0"/>
+                    <Output Name="Output_Spectran_V6B_Spectra2_0" Title="Spectra2" Owner="Block_Spectran_V6B_0"/>
+                    <Output Name="Output_Spectran_V6B_GPS_0" Title="Location" Owner="Block_Spectran_V6B_0"/>
+                    <Output Name="Output_Spectran_V6B_TX_0" Title="Tx" Owner="Block_Spectran_V6B_0"/>
+                </Outputs>
+            </Base>
+            <Base GUID="313553bb-6395-467d-88cc-b3e3da641c12" Factory="Factory_IQPowerSpectrum" Name="Block_IQPowerSpectrum_0" Title="IQ Power Spectrum">
+                <ConfigItem Name="Block_IQPowerSpectrum_0_config" Class="group" Type="0">
+                    <ConfigItem Name="main" Class="group" Type="0" Expanded="1">
+                        <ConfigItem Name="fftoverlap" Class="float" Type="2" Val="0.5" SubUnitName="%"/>
+                    </ConfigItem>
+                    <ConfigItem Name="view" Class="group" Type="0">
+                        <ConfigItem Name="frequencystart" Class="float" Type="2" Val="1798875000" SubUnitName="MHz"/>
+                        <ConfigItem Name="frequencyspan" Class="float" Type="2" Val="38250000" SubUnitName="MHz"/>
+                    </ConfigItem>
+                </ConfigItem>
+                <Inputs>
+                    <Input Name="Input_IQ_0" Title="IQ" Owner="Block_IQPowerSpectrum_0"/>
+                </Inputs>
+                <Outputs>
+                    <Output Name="Output_pectra_0" Title="Spectra" Owner="Block_IQPowerSpectrum_0">
+                        <Connections>
+                            <Connection Name="Input_Spectran_Spectra_0" Title="Spectra" Owner="Block_PulsedWaterfall_3D_0"/>
+                        </Connections>
+                    </Output>
+                </Outputs>
+            </Base>
+            <Base GUID="be2a35aa-2e9f-4cc9-858b-f8d2b75728fa" Factory="Factory_PulsedWaterfall_3D" Name="Block_PulsedWaterfall_3D_0" Title="Pulsed Waterfall 3D">
+                <ConfigItem Name="Block_PulsedWaterfall_3D_0_config" Class="group" Type="0">
+                    <ConfigItem Name="main" Class="group" Type="0" Expanded="1">
+                        <ConfigItem Name="buffertime" Class="float" Type="2" Val="0.08" SubUnitName="ms"/>
+                        <ConfigItem Name="compression" Class="float" Type="2" Val="3"/>
+                        <ConfigItem Name="compressionmode" Class="enum" Type="7" Val="1" SVal="Average" Names="Max,Average,Power,First,Min"/>
+                    </ConfigItem>
+                    <ConfigItem Name="view" Class="group" Type="0" Expanded="1">
+                        <ConfigItem Name="frequencystart" Class="float" Type="2" Val="1798875000" SubUnitName="MHz"/>
+                        <ConfigItem Name="frequencyspan" Class="float" Type="2" Val="38250000" SubUnitName="MHz"/>
+                        <ConfigItem Name="charts" Class="group" Type="0">
+                            <ConfigItem Name="gridcolor" Class="color" Type="11" Val="#ff808080"/>
+                            <ConfigItem Name="axiscolor" Class="color" Type="11" Val="#ff808080"/>
+                        </ConfigItem>
+                        <ConfigItem Name="gridcolor" Class="color" Type="11" Val="#ff808080"/>
+                        <ConfigItem Name="axiscolor" Class="color" Type="11" Val="#ff808080"/>
+                        <ConfigItem Name="axisScale" Class="group" Type="0">
+                            <ConfigItem Name="power" Class="group" Type="0">
+                                <ConfigItem Name="base" Class="float" Type="2" Val="0.1589162349700928"/>
+                            </ConfigItem>
+                        </ConfigItem>
+                        <ConfigItem Name="title" Class="group" Type="0">
+                            <ConfigItem Name="placement" Class="enum" Type="7" Val="10" SVal="custom" Names="hidden,top-left,top-center,top-right,left,center,right,bottom-left,bottom-center,bottom-right,custom"/>
+                            <ConfigItem Name="placementx" Class="float" Type="2" Val="0.354206383228302" SubUnitName="%"/>
+                            <ConfigItem Name="placementy" Class="float" Type="2" Val="0.002740798750892282" SubUnitName="%"/>
+                            <ConfigItem Name="title" Class="string" Type="3" Val="Time Triggered LTE in 3D"/>
+                            <ConfigItem Name="info" Class="string" Type="3" Val="A time triggered 3D Waterfall from LTE broadcastings locked to 80ms trigger duration"/>
+                            <ConfigItem Name="titlescale" Class="float" Type="2" Val="4.7"/>
+                            <ConfigItem Name="infoscale" Class="float" Type="2" Val="1.4"/>
+                        </ConfigItem>
+                        <ConfigItem Name="drawmode" Class="enum" Type="7" Val="2" SVal="surface" Names="lines,grid,surface,dots,bands"/>
+                        <ConfigItem Name="showcolorhistogram" Class="bool" Type="6" Val="1"/>
+                    </ConfigItem>
+                    <ConfigItem Name="legend" Class="group" Type="0">
+                        <ConfigItem Name="placement" Class="enum" Type="7" Val="1" SVal="top-left" Names="hidden,top-left,top-center,top-right,left,center,right,bottom-left,bottom-center,bottom-right,custom"/>
+                    </ConfigItem>
+                    <ConfigItem Name="colormap" Class="group" Type="0">
+                        <ConfigItem Name="low" Class="float" Type="2" Val="0.1487862169742584" SubUnitName="%"/>
+                        <ConfigItem Name="high" Class="float" Type="2" Val="0.3382928669452667" SubUnitName="%"/>
+                        <ConfigItem Name="control" Class="group" Type="0">
+                            <ConfigItem Name="cvalue0" Class="float" Type="2" Val="0.6942148804664612" SubUnitName="%"/>
+                            <ConfigItem Name="ccolor0" Class="float" Type="2" Val="0.1451612859964371" SubUnitName="%"/>
+                        </ConfigItem>
+                    </ConfigItem>
+                    <ConfigItem Name="orientation3d" Class="group" Type="0">
+                        <ConfigItem Name="offsetx" Class="float" Type="2" Val="0.04791723086964339"/>
+                        <ConfigItem Name="offsety" Class="float" Type="2" Val="0.7684025024063885"/>
+                        <ConfigItem Name="scalex" Class="float" Type="2" Val="1.333333333333333"/>
+                        <ConfigItem Name="scaley" Class="float" Type="2" Val="-0.5666666666666667"/>
+                        <ConfigItem Name="scalez" Class="float" Type="2" Val="1.333333333333333"/>
+                        <ConfigItem Name="rotatex" Class="float" Type="2" Val="45.23141612210929"/>
+                        <ConfigItem Name="rotatey" Class="float" Type="2" Val="-27.05576165817278"/>
+                        <ConfigItem Name="rotatez" Class="float" Type="2" Val="6.582576515778172"/>
+                        <ConfigItem Name="shadow" Class="bool" Type="6" Val="1"/>
+                        <ConfigItem Name="specular" Class="bool" Type="6" Val="1"/>
+                        <ConfigItem Name="outline" Class="bool" Type="6" Val="1"/>
+                        <ConfigItem Name="ambocclusion" Class="bool" Type="6" Val="1"/>
+                    </ConfigItem>
+                    <ConfigItem Name="markers" Class="group" Type="0" Expanded="0"/>
+                </ConfigItem>
+                <Inputs>
+                    <Input Name="Input_Spectran_Spectra_0" Title="Spectra" Owner="Block_PulsedWaterfall_3D_0"/>
+                </Inputs>
+            </Base>
+        </Bases>
+        <Privileges>
+            <Privilege Uuid="37F01B9B-B27A-48E2-B0D1-5F6DD6194681" Dbg.UserBase="Base">
+                <Root Name="mis">
+                    <Module Name="modMisMis" Type="0">
+                        <ConfigItem Name="misMisSaveMission" Class="bool" Type="6" Val="1"/>
+                        <ConfigItem Name="misMisSaveMissionAs" Class="bool" Type="6" Val="1"/>
+                        <ConfigItem Name="misMisOpenMission" Class="bool" Type="6" Val="1"/>
+                        <ConfigItem Name="misMisConfigMission" Class="bool" Type="6" Val="1"/>
+                    </Module>
+                    <Module Name="modMisBlocks" Type="0">
+                        <ConfigItem Name="misBlocksShowConfig" Class="bool" Type="6" Val="1"/>
+                        <ConfigItem Name="misBlocksEditConfig" Class="bool" Type="6" Val="1"/>
+                    </Module>
+                </Root>
+            </Privilege>
+        </Privileges>
+        <DockingUI Version="2021.1">
+            <Controller SelectedPerspective="P1">
+                <Perspective Name="P1" WorkMode="Split">
+                    <StateGrid>
+                        <CellController Width="2253" Height="1307" Cols="1" Rows="1" Widths="2247" Heights="1301"/>
+                        <GridObjectController Cols="1" Rows="1"/>
+                    </StateGrid>
+                    <Docks>
+                        <Dock Name="Base_BlockEditor">
+                            <DockedPosition Name="Base_BlockEditor" Monitor="Edit" MonitorTitle="Edit Monitor" Rect="0;0;1;1"/>
+                        </Dock>
+                        <Dock Name="Base_ROC"/>
+                        <Dock Name="Base_InfoCenter"/>
+                        <Dock Name="Base_HealthMonitor"/>
+                        <Dock Name="Block_Spectran_V6B_0" Visible="1">
+                            <DockedPosition Name="Block_Spectran_V6B_0" Monitor="Exec" MonitorTitle="Exec Monitor" Rect="0;0;1;1"/>
+                        </Dock>
+                        <Dock Name="Block_IQPowerSpectrum_0" Visible="1">
+                            <DockedPosition Name="Block_IQPowerSpectrum_0" Monitor="Exec" MonitorTitle="Exec Monitor" Rect="0;0;1;1"/>
+                        </Dock>
+                        <Dock Name="Block_PulsedWaterfall_3D_0" Visible="1">
+                            <DockedPosition Name="Block_PulsedWaterfall_3D_0" Monitor="Exec" MonitorTitle="Exec Monitor" Rect="0;0;1;1"/>
+                        </Dock>
+                    </Docks>
+                    <InternalMonitors>
+                        <Monitor Name="Edit" Title="Edit Monitor" Visible="0" DUIMOFLAG="FixLay">
+                            <Grid>
+                                <State>
+                                    <CellController Width="1529" Height="1301" Cols="1" Rows="1" Widths="1529" Heights="1301"/>
+                                    <GridObjectController Cols="1" Rows="1">
+                                        <Objects>
+                                            <Object Rect="0;0;1;1">
+                                                <ExtData Items="Base_BlockEditor"/>
+                                            </Object>
+                                        </Objects>
+                                    </GridObjectController>
+                                </State>
+                            </Grid>
+                        </Monitor>
+                        <Monitor Name="Exec" Title="Exec Monitor" Visible="1" DUIMOFLAG="ProSCs;ProDra;ProDro;ConMen">
+                            <Grid>
+                                <State>
+                                    <CellController Width="2247" Height="1301" Cols="1" Rows="1" Widths="2247" Heights="1301"/>
+                                    <GridObjectController Cols="1" Rows="1">
+                                        <Objects>
+                                            <Object Rect="0;0;1;1">
+                                                <ExtData Items="Block_Spectran_V6B_0;Block_IQPowerSpectrum_0;Block_PulsedWaterfall_3D_0" Item="Block_PulsedWaterfall_3D_0"/>
+                                            </Object>
+                                        </Objects>
+                                    </GridObjectController>
+                                </State>
+                            </Grid>
+                        </Monitor>
+                    </InternalMonitors>
+                    <ExternalMonitors/>
+                </Perspective>
+            </Controller>
+            <BlockDocks>
+                <BlockDock BaseName="Base_BlockEditor" VisibleConfiguration="1" Visible="1">
+                    <DockWidget>
+                        <Child_RTSA Splitter="474;643"/>
+                        <BlockEditorGuiConfiguration>
+                            <Categories>
+                                <Category Name="catAudio" Expanded="1"/>
+                                <Category Name="catCalibration" Expanded="1"/>
+                                <Category Name="catCamera" Expanded="1"/>
+                                <Category Name="catChannel Analysis" Expanded="1"/>
+                                <Category Name="catControl" Expanded="1"/>
+                                <Category Name="catDecoder" Expanded="1"/>
+                                <Category Name="catDevices" Expanded="1"/>
+                                <Category Name="catDrone Detection" Expanded="1"/>
+                                <Category Name="catFrequent Blocks" Expanded="1"/>
+                                <Category Name="catIQ Processing" Expanded="1"/>
+                                <Category Name="catIn / Out" Expanded="1"/>
+                                <Category Name="catJammer" Expanded="1"/>
+                                <Category Name="catMaster Application" Expanded="1"/>
+                                <Category Name="catMiscellaneous" Expanded="1"/>
+                                <Category Name="catRF Measurement Trigger / Detector / Filter" Expanded="1"/>
+                                <Category Name="catRF Measurement Views" Expanded="1"/>
+                                <Category Name="catRadar" Expanded="1"/>
+                                <Category Name="catSweep" Expanded="1"/>
+                                <Category Name="catVideo" Expanded="1"/>
+                            </Categories>
+                        </BlockEditorGuiConfiguration>
+                        <BlockEditorGuiView ZoomFactor="0.7000000000000001" CenterScenePos="746.429;907.857"/>
+                    </DockWidget>
+                </BlockDock>
+                <BlockDock BaseName="Base_ROC">
+                    <DockWidget>
+                        <Child_RTSA Splitter="340;300"/>
+                        <ROCGuiView/>
+                    </DockWidget>
+                </BlockDock>
+                <BlockDock BaseName="Base_InfoCenter">
+                    <DockWidget>
+                        <Child_RTSA Splitter="340;300"/>
+                    </DockWidget>
+                </BlockDock>
+                <BlockDock BaseName="Base_HealthMonitor">
+                    <DockWidget>
+                        <Child_RTSA Splitter="340;300"/>
+                    </DockWidget>
+                </BlockDock>
+                <BlockDock BaseName="Block_Spectran_V6B_0" Visible="1">
+                    <DockWidget>
+                        <Child_RTSA Splitter="409;1836"/>
+                    </DockWidget>
+                </BlockDock>
+                <BlockDock BaseName="Block_IQPowerSpectrum_0" VisibleConfiguration="1" Visible="1">
+                    <DockWidget>
+                        <Child_RTSA Splitter="338;1905"/>
+                    </DockWidget>
+                </BlockDock>
+                <BlockDock BaseName="Block_PulsedWaterfall_3D_0" VisibleConfiguration="1" Visible="1">
+                    <DockWidget>
+                        <Child_RTSA Splitter="340;300"/>
+                    </DockWidget>
+                </BlockDock>
+            </BlockDocks>
+        </DockingUI>
+        <AppRibbonLayout Order="TS.ribbonTabRTSA,TS.ribbonTabDOUI,TS.ribbonTabSERV,TS.Base_ROC_ribbon,TS.Block_Spectran_V6B_0_ribbon">
+            <MainSections>
+                <MainSection SelectedTab="TS.ribbonTabRTSA">
+                    <TabSection Name="TS.ribbonTabRTSA" Visible="1"/>
+                    <TabSection Name="TS.ribbonTabDOUI" Visible="1"/>
+                    <TabSection Name="TS.ribbonTabSERV" Visible="1"/>
+                </MainSection>
+                <MainSection>
+                    <TabSection Name="TS.Base_ROC_ribbon" Visible="0"/>
+                </MainSection>
+                <MainSection SelectedTab="TS.Block_Spectran_V6B_0_ribbon">
+                    <TabSection Name="TS.Block_Spectran_V6B_0_ribbon" Visible="1"/>
+                </MainSection>
+            </MainSections>
+        </AppRibbonLayout>
+    </Data>
+</Mission>
